@@ -3,7 +3,27 @@
     src: url(source/PretendardVariable.woff2);
 }
 
+@media (prefers-color-scheme: light) {
+    html {
+        --primary: #AE46FF;
+        --bgcolor: #fff;
+        --grey: #727272;
+        --textcolor: #1e1e1e;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --primary: #AE46FF;
+        --bgcolor: #1e1e1e;
+        --dark: #727272;
+        --textcolor: white;
+    }
+}
+
 html, body {
+    color: var(--textcolor);
+    background-color: var(--bgcolor);
     font-family: 'sans';
     padding: 0;
     margin: 0;
@@ -18,7 +38,7 @@ h1 {
 h2 {
     font-size: 2em;
     font-weight: 700;
-    padding: 2vh 0;
+    padding: 2vh 2vw;
 }
 
 h3 {
@@ -47,5 +67,19 @@ p {
 }
 
 #section1 {
-    background-color: #f5f5f5;
+    background-color: var(--dark);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.types {
+    width: 8vw;
+    height: 8vw;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
