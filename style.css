@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'sans';
+    src: url(source/PretendardVariable.woff2);
+}
+
+html, body {
+    font-family: 'sans';
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    padding: 8vh 2vw 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 2vh 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 0 2vw;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0;
+}
+
+#main {
+    width: 60vw;
+    margin: 0 auto;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    height: 52vh;
+    box-sizing: border-box;
+    margin: 24vh 0;
+    scroll-snap-align: center;
+}
+
+#section1 {
+    background-color: #f5f5f5;
+}
