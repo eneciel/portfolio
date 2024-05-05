@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link href="web.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html"><p>프로필</p></a>
+            <a href="#"><p>></p></a>
+            <a href="#"><h4>포트폴리오</h4></a>
+        </nav>
+        <main>
+            <h1>작업물</h1>
+            <div class="row">
+                <button class="filterButton active" data-type="all"><h4>ALL</h4></button>
+                <button class="filterButton" data-type="basic"><h4>HTML&CSS</h4></button>
+                <button class="filterButton" data-type="script"><h4>JS</h4></button>
+                <button class="filterButton" data-type="design"><h4>DESIGN</h4></button>
+            </div>
+            <div class="project" data-type="script">
+                <div class="pj-header"><h3>Quackity Subs<br>번역팀 소개페이지</h3></div>
+                <div class="pj-preview">
+                    <img src="source/qsubs/main-01.png">
+                    <img src="source/qsubs/main-02.png">
+                    <img src="source/qsubs/main-03.png">
+                </div>
+            </div>
+            <div class="project" data-type="design">
+                <div class="pj-header"><h3>농심</h3></div>
+                <div class="pj-preview"></div>
+            </div>
+        </main>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var filterButtons = document.querySelectorAll('.filterButton');
+                var projects = document.querySelectorAll('.project');
+
+                filterButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        var type = this.getAttribute('data-type');
+
+                        filterButtons.forEach(function(btn) {
+                            btn.classList.remove('active');
+                        });
+                        this.classList.add('active');
+
+                        projects.forEach(function(projects) {
+                            if (type === 'all') {
+                                projects.style.display = 'flex';
+                            } else {
+                                if (projects.getAttribute('data-type') === type) {
+                                    projects.style.display = 'flex';
+                                } else {
+                                    projects.style.display = 'none';
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

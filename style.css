@@ -50,6 +50,13 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
 p {
     font-size: 1em;
     font-weight: 400;
@@ -68,7 +75,7 @@ img {
 
 #main {
     width: 60vw;
-    margin: auto;
+    margin: 24vh auto;
     scroll-snap-type: y mandatory;
 }
 
@@ -76,7 +83,7 @@ img {
     border: var(--dark) solid 4px;
     box-sizing: border-box;
     padding: 0 0 4vh;
-    margin: 24vh 0;
+    margin: 4vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,4 +113,30 @@ img {
 
 .social {
     padding: 1vh 2vw;
+}
+
+details {
+    background-color: var(--primary);
+    border-radius: 3vh;
+    margin: 1vh 0;
+}
+
+summary {
+    width: 48vw;
+    height: 6vh;
+    background-color: var(--primary);
+    border-radius: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary img {
+    padding: 0 1vw;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vw;
 }
