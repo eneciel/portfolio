@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link href="../web.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="/index.html"><p>프로필</p></a>
+            <a href="#"><p>></p></a>
+            <a href="../web.html"><p>포트폴리오</p></a>
+            <a href="#"><p>></p></a>
+            <a href="#"><h4>Quackity Subs 번역팀 소개페이지</h4></a>
+        </nav>
+        <main>
+            <h1>Quackity Subs 번역팀 소개페이지</h1>
+            <div class="row">
+                <div class="filterButton"><h4>#DEV</h4></div>
+                <div class="filterButton"><h4>#HTML&CSS</h4></div>
+                <div class="filterButton"><h4>#JS</h4></div>
+                <div class="filterButton"><h4>#DESIGN</h4></div>
+            </div>
+            <div class="row" style="padding-top: 4vh;">
+                <a href="https://eneciel.github.io/quackitysubs" target="_blank"><button>사이트</button></a>
+                <a href="https://github.com/eneciel/quackitysubs" target="_blank"><button>깃허브</button></a>
+            </div>
+            <div class="project">
+                <div class="pj-header"><h3>개요</h3></div>
+                <div class="pj-section">
+                    <img src="../source/qsubs/function-01.png">
+                    <p>Quackity Subs 팀을 소개하기 위한 페이지를 제작하였다. 
+                        언어별로 페이지를 분리하여 사용자가 원하는 언어를 선택하여 이동할 수 있는 헤더 영역, 
+                        모바일 접속을 감지해 모바일 버전 사이트로 리다이렉트하는 스크립트, 
+                        호버 시 해당 팀원의 정보가 보이도록 하는 섹션,
+                        좌측 고정 내비게이션을 제작하였다.</p>
+                    <div style="padding: 1vh 0;">
+                        <h4>기간:</h4>
+                        <p>2024. 04. 15 ~ 2024. 04. 17</p>
+                    </div>
+                    <div style="padding: 1vh 0;">
+                        <h4>사용:</h4>
+                        <p>HTML, CSS, JS, VS CODE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="pj-header"><h3>메인 기능 1- <br>언어별 <br>페이지 분리</h3></div>
+                <div class="pj-section">
+                    <img src="../source/qsubs/main-01.png">
+                    <h2>언어별 페이지 분리</h2>
+                    <p>
+                        Quackity Subs 팀은 두 가지 언어로 제작되는 콘텐츠를 전 세계의 팬들이 언어장벽 없이 소비할 수 있게 하고자 만들어진 팬 번역팀이다.
+                        영어와 스페인어를 서로 번역하던 데에 그치지 않고 한국어, 포르투갈어에 이어 프랑스어 팀원까지 추가되어 총 다섯 가지의 언어를 제공하게 되었다.
+                        아무리 간단한 소개 페이지라 할지라도 다섯 가지 언어로 번역된 콘텐츠를 같은 공간에 나열하는 것보다는
+                        가장 처음 보이는 영역인 헤더에서 사용자가 본인이 원하는 언어의 페이지로 이동할 수 있도록 하는 것이 낫다고 판단하여
+                        각 언어별로 페이지를 만들게 되었다.
+                    </p>
+                    <p>
+                        처음에는 각 섹션별로 언어 선택 버튼을 만들어 콘텐츠가 전환되게끔 구성하려고 했지만, 
+                        데이터베이스 등을 활용해 사이트를 빌드할 능력이 되지 않아 얄짤없이 html 파일 내에 내용을 모두 작성해야 했기에
+                        코드가 본문 내용으로만 가득 차게 된다는 문제점이 있었다. 
+                    </p>
+                    <h3>코드</h3>
+                    <img src="../source/qsubs/function-03.png">
+                    <p>기본 언어인 영문 버전을 index 파일로 두고, 
+                        모바일로 접속했을 경우 모바일 경로 안의 페이지로 자동으로 이동되게끔 연결한 뒤
+                        나머지 언어별 사이트는 웹 경로 안에 정리했다.
+                    </p>
+                    <img src="../source/qsubs/function-07.png">
+                    <p>
+                        UserAgent를 테스트하여 모바일의 경우를 mobile에 저장하고 mobile일 경우 모바일 페이지로 이동하게끔 작성하였다.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="pj-header"><h3>메인 기능 2- <br>호버 애니메이션</h3></div>
+                <div class="pj-section">
+                    <img src="../source/qsubs/function-02.png">
+                    <img src="../source/qsubs/main-02.png">
+                    <h2>호버 애니메이션</h2>
+                    <p>
+                        간단하게 CSS만을 활용해 구현했다. 
+                        헤더 부분과 세부 정보 부분을 분리하고 세부 정보는 숨겨둔 뒤,
+                        :hover에 스타일을 추가해 width, display를 조정했다.
+                    </p>
+                    <h3>코드</h3>
+                    <img src="../source/qsubs/function-04.png">
+                    <img src="../source/qsubs/function-05.png">
+                    <p>
+                        profilebox라는 섹션 영역을 먼저 잡은 후, 
+                        profile로 각 팀원의 공간을 만들어 6개가 가로로 나열되도록 했다.
+                        그 안에는 다시 profile-header와 profile-contentbox로 구분했다.
+                        profile-header에는 flex 속성과 이미지 크기 조정을 부여하여 아이콘과 닉네임을 함께 배치했다.
+                        profile-contentbox 안에는 각 행별 영역인 profile-content를 만들어 인덱스와 콘텐츠를 가로로 배치했다.
+                    </p>
+                    <h2>모바일 버전</h2>
+                    <img src="../source/qsubs/main-03.png">
+                    <p>
+                        모바일에서는 호버가 포커스와 유사하게 작동하긴 하지만, 여전히 마우스가 없는 것은 마찬가지였기에 기능을 클릭으로 대체할 필요가 있었다.
+                    </p>
+                    <h3>코드</h3>
+                    <img src="../source/qsubs/function-06.png">
+                    <p>
+                        클릭 시 작동하는 function을 만들고 if문을 작성해 profile이 이미 열려 있는지 확인해 열려있다면 닫고,
+                        아니라면 for문이 모든 profile의 "clicked" 클래스를 제거한 다음 클릭된 타겟에만 다시 클래스를 추가하도록 했다.
+                        마지막으로 이니셜 function으로 for문을 작성해 모든 profile에 이벤트리스너를 추가했다.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

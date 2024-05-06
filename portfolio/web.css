@@ -24,6 +24,22 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: var(--black-01);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 4vh 1vw 2vh;
+    margin: 0;
+}
+
+h3 {
+    color: var(--black-01);
+    font-size: 1em;
+    font-weight: 700;
+    padding: 2vh 1vw 0;
+    margin: 0;
+}
+
 h4 {
     color: var(--black-01);
     font-size: 1em;
@@ -33,7 +49,7 @@ h4 {
 }
 
 p {
-    color: var(--black-01);
+    color: var(--black-02);
     font-size: 1em;
     font-weight: 400;
     padding: 0 1vh;
@@ -61,12 +77,31 @@ main {
     margin: 0 auto;
 }
 
-button {
-    width: 6vw;
+.filterButton {
+    min-width: 6vw;
     height: 4vh;
     background-color: var(--white-02);
+    padding: 0 1em;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 999px;
+}
+
+.filterButton:hover {
+    background-color: var(--primary);
+    transition: all 300ms;
+}
+
+.filterButton:hover h4 {
+    color: var(--white-03);
+    transition: all 300ms;
+}
+
+.row {
+    display: flex;
 }
 
 .active {
@@ -80,7 +115,7 @@ button {
 
 .project {
     width: 60vw;
-    padding: 12vh 0;
+    padding: 8vh 0;
     display: flex;
 }
 
@@ -102,7 +137,36 @@ button {
 }
 
 .pj-preview img {
-    width: 14vw;
+    width: 15vw;
     height: auto;
     box-shadow: 0 0 8px 0 var(--black-03);
+}
+
+.pj-section {
+    width: 48vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.pj-section img {
+    width: 48vw;
+    box-shadow: 0 0 8px 0 var(--black-03);
+    margin: 2vh 0;
+}
+
+.pj-section p {
+    width: 48vw;
+    word-break: break-word;
+    text-indent: 1em;
+}
+
+button {
+    color: var(--white-03);
+    font-weight: 700;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 1em;
+    padding: 1vh 2vw;
+    cursor: pointer;
 }
