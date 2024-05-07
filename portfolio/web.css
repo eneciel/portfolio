@@ -172,12 +172,22 @@ button {
     cursor: pointer;
 }
 
+footer {
+    background-color: var(--white-02);
+    padding: 24vh 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #TTT {
     width: 3vw;
     height: 3vw;
     background-color: var(--white-03);
     border-radius: 999px;
     box-shadow: 0 0 8px 0 var(--black-03);
+    padding: 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
