@@ -6,6 +6,7 @@
 @media (prefers-color-scheme: light) {
     html {
         --primary: #AE46FF;
+        --primary-lighten: #bf83ed;
         --bgcolor: #fff;
         --dark: #727272;
         --textcolor: #1e1e1e;
@@ -16,6 +17,7 @@
 @media (prefers-color-scheme: dark) {
     html {
         --primary: #AE46FF;
+        --primary-lighten: #5d2b84;
         --bgcolor: #1e1e1e;
         --dark: #727272;
         --textcolor: white;
@@ -137,7 +139,7 @@ button:hover {
 }
 
 details {
-    background-color: var(--primary);
+    background-color: var(--primary-lighten);
     border-radius: 3vh;
     margin: 1vh 0;
 }
@@ -145,7 +147,8 @@ details {
 summary {
     width: 48vw;
     height: 6vh;
-    background-color: var(--primary);
+    background-color: var(--primary-lighten);
+    box-shadow: var(--dark);
     border-radius: 3vh;
     display: flex;
     justify-content: space-between;
