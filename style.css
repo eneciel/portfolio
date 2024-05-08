@@ -7,8 +7,9 @@
     html {
         --primary: #AE46FF;
         --bgcolor: #fff;
-        --grey: #727272;
+        --dark: #727272;
         --textcolor: #1e1e1e;
+        --subtext: #2c2c2c;
     }
 }
 
@@ -18,6 +19,7 @@
         --bgcolor: #1e1e1e;
         --dark: #727272;
         --textcolor: white;
+        --subtext: #eee;
     }
 }
 
@@ -32,7 +34,7 @@ html, body {
 h1 {
     font-size: 3em;
     font-weight: 900;
-    padding: 4vh 2vw 0;
+    padding: 4vh 2vw 2vh;
     margin: 0;
 }
 
@@ -52,21 +54,21 @@ h3 {
 
 h4 {
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0;
     margin: 0;
 }
 
 p {
+    color: var(--subtext);
     font-size: 1em;
     font-weight: 400;
-    padding: 0;
+    padding: 1vh 0;
     margin: 0;
 }
 
 a {
     color: var(--textcolor);
-    text-decoration: none;
 }
 
 img {
@@ -80,9 +82,9 @@ img {
 }
 
 .section {
-    border: var(--dark) solid 4px;
+    border: var(--primary) solid 2px;
+    border-radius: 1em;
     box-sizing: border-box;
-    padding: 0 0 4vh;
     margin: 4vh;
     display: flex;
     flex-direction: column;
@@ -91,15 +93,28 @@ img {
 }
 
 .row {
+    padding: 2vh 0;
     display: flex;
     align-items: center;
 }
 
+button {
+    color: var(--textcolor);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 999px;
+    padding: 0 1vw;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
 .types {
     min-width: 8vw;
-    border: var(--primary) solid 4px;
+    border: var(--primary) solid 2px;
     border-radius: 1em;
-    padding: 1vh 0 2vh;
+    padding: 1vh 1vw 2vh;
     margin: 0 2vh;
     display: flex;
     flex-direction: column;
@@ -112,7 +127,13 @@ img {
 }
 
 .social {
-    padding: 1vh 2vw;
+    display: flex;
+    padding: 0 1vw;
+    align-items: center;
+}
+
+.social p {
+    color: var(--textcolor);
 }
 
 details {
@@ -139,4 +160,25 @@ summary img {
     display: flex;
     justify-content: space-between;
     padding: 2vh 2vw;
+}
+
+.teamsection {
+    padding: 2vh 0;
+    margin: 0 auto;
+}
+
+.teamheader {
+    width: 48vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teamcontent {
+    width: 48vw;
+}
+
+.teamrow {
+    display: flex;
+    align-items: center;
 }
