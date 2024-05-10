@@ -34,21 +34,21 @@ html, body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.25em;
     font-weight: 900;
     padding: 4vh 2vw 2vh;
     margin: 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     padding: 2vh 2vw;
     margin: 0;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.125em;
     font-weight: 500;
     padding: 1vh 2vw;
     margin: 0;
@@ -171,7 +171,6 @@ details {
     box-shadow: 0 0 16px 0 var(--dark);
     box-sizing: border-box;
     border-radius: 3vh;
-    padding: 0 1vh;
     margin: 4vh 0;
 }
 
@@ -192,7 +191,13 @@ summary img {
 }
 
 details .row {
+    width: 48vw;
     padding: 1vh;
+    display: block;
+}
+
+details .row p {
+    text-indent: 1em;
 }
 
 .teamsection {
@@ -202,7 +207,6 @@ details .row {
 
 .teamheader {
     width: 64vw;
-    padding: 2vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
