@@ -140,6 +140,7 @@ button:hover {
 
 details {
     background-color: var(--primary-lighten);
+    box-shadow: 0 0 16px 0 var(--dark);
     border-radius: 3vh;
     margin: 1vh 0;
 }
@@ -148,7 +149,6 @@ summary {
     width: 48vw;
     height: 6vh;
     background-color: var(--primary-lighten);
-    box-shadow: var(--dark);
     border-radius: 3vh;
     display: flex;
     justify-content: space-between;
