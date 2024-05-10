@@ -1,6 +1,8 @@
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" media="(orientation: landscape)">
+        <link href="mobile.css" rel="stylesheet" media="(orientation: portrait)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="main">
@@ -12,68 +14,71 @@
                 </div>
             </div>
             <div class="section">
-                <img style="width: 16vw; margin: 4vh 0 0; border-radius: 2em;" src="source/eneciel/pfp.png">
+                <img id="profile" src="source/eneciel/pfp.png">
                 <h1>Eneciel</h1>
-                <p>Sodium chloride, commonly known as edible salt, is an ionic compound with the chemical formula NaCl...</p>
+                <p id="sodium">Sodium chloride, commonly known as edible salt, is an ionic compound with the chemical formula NaCl...</p>
 
-                
                 <details>
                     <summary>
                         <h3>Personal Information</h3>
                         <img style="width: 2em; rotate: -90deg;" src="source/icon/down-arrow.svg">
                     </summary>
-                    <div class="teamrow">
+                    <div class="row">
                         <h3>Name</h3>
                         <p>Eneciel / 엔에씨엘</p>
                     </div>
-                    <div class="teamrow">
+                    <div class="row">
                         <h3>Pronouns</h3>
                         <p>They/Them</p>
                     </div>
-                    <div class="teamrow">
+                    <div class="row">
                         <h3>Age</h3>
                         <p>17</p>
                     </div>
-                    <div class="teamrow">
+                    <div class="row">
                         <h3>Timezone</h3>
                         <p>KST | PST +17 | UTC +9</p>
                     </div>
-                    <div class="teamrow">
+                    <div class="row">
                         <h3>Discord</h3>
                         <p>eneciel</p>
                     </div>
                 </details>
 
-                <div class="row">
+                <div class="socialbox">
                     <h3>Social</h3>
-                    <a href="https://twitter.com/NaCl_HQ" target="_blank"><div class="social">
-                        <img src="source/icon/twitter.svg" alt="@NaCl_HQ">
-                        <p>Twitter</p>
-                    </div></a>
-                    <a href="https://masto.es/@eneciel" target="_blank"><div class="social">
-                        <img src="source/icon/mastodon.svg" alt="@eneciel@masto.es">
-                        <p>Mastodon</p>
-                    </div></a>
-                    <a href="https://www.tumblr.com/eneciel" target="_blank"><div class="social">
-                        <img src="source/icon/tumblr.svg" alt="@eneciel">
-                        <p>Tumblr</p>
-                    </div></a>
-                    <a href="https://www.patreon.con/eneciel" target="_blank"><div class="social">
-                        <img src="source/icon/patreon.svg" alt="">
-                        <p>Patreon</p>
-                    </div></a>
+                    <div class="row">
+                        <a href="https://twitter.com/NaCl_HQ" target="_blank"><div class="social">
+                            <img src="source/icon/twitter.svg" alt="@NaCl_HQ">
+                            <p>Twitter</p>
+                        </div></a>
+                        <a href="https://masto.es/@eneciel" target="_blank"><div class="social">
+                            <img src="source/icon/mastodon.svg" alt="@eneciel@masto.es">
+                            <p>Mastodon</p>
+                        </div></a>
+                        <a href="https://www.tumblr.com/eneciel" target="_blank"><div class="social">
+                            <img src="source/icon/tumblr.svg" alt="@eneciel">
+                            <p>Tumblr</p>
+                        </div></a>
+                        <a href="https://www.patreon.con/eneciel" target="_blank"><div class="social">
+                            <img src="source/icon/patreon.svg" alt="">
+                            <p>Patreon</p>
+                        </div></a>
+                    </div>
                 </div>
-                <div class="row">
+                <div class="portfoliobox">
                     <h3>Portfolios</h3>
-                    <a href="portfolio/web.html">
-                        <div class="types"><img src="source/icon/monitor.svg"><h4>Web Front-End</h4></div>
-                    </a>
-                    <a href="portfolio/design.html">
-                        <div class="types"><img src="source/icon/design.svg"><h4>Design</h4></div>
-                    </a>
-                    <a href="portfolio/translate.html">
-                        <div class="types"><img src="source/icon/translate.svg"><h4>Translation</h4></div>
-                    </a>
+                    <div class="row">
+                        <a href="portfolio/web.html">
+                            <div class="types"><img src="source/icon/monitor.svg"><h4>Web Front-End</h4></div>
+                        </a>
+                        <a href="portfolio/design.html">
+                            <div class="types"><img src="source/icon/design.svg"><h4>Design</h4></div>
+                        </a>
+                        <a href="portfolio/translate.html">
+                            <div class="types"><img src="source/icon/translate.svg"><h4>Translation</h4></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

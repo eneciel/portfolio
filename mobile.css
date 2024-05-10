@@ -50,7 +50,7 @@ h2 {
 h3 {
     font-size: 1.25em;
     font-weight: 500;
-    padding: 2vh 2vw;
+    padding: 1vh 2vw;
     margin: 0;
 }
 
@@ -78,8 +78,8 @@ img {
 }
 
 #main {
-    width: 60vw;
-    margin: 24vh auto;
+    width: 96vw;
+    margin: 4vh auto;
     scroll-snap-type: y mandatory;
 }
 
@@ -95,17 +95,17 @@ img {
 }
 
 #profile {
-    width: 16vw; 
+    width: 40vw; 
     margin: 4vh 0 0; 
     border-radius: 2em;
 }
 
 #sodium {
-    width: 36vw;
+    width: 64vw;
 }
 
 .row {
-    padding: 2vh 0;
+    padding: 1vh 0;
     display: flex;
     align-items: center;
 }
@@ -123,10 +123,9 @@ button:hover {
 }
 
 .types {
-    min-width: 8vw;
     border: var(--primary) solid 2px;
     border-radius: 1em;
-    padding: 1vh 1vw 2vh;
+    padding: 1vw;
     margin: 0 2vh;
     display: flex;
     flex-direction: column;
@@ -139,7 +138,9 @@ button:hover {
 }
 
 .socialbox {
-    display: flex;
+    padding: 2vw 0;
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -151,32 +152,47 @@ button:hover {
 
 .social p {
     color: var(--textcolor);
+    display: none;
 }
 
 .portfoliobox {
-    display: flex;
+    padding: 2vw 0;
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.types h4 {
+    display: none;
 }
 
 details {
     background-color: var(--primary-lighten);
     box-shadow: 0 0 16px 0 var(--dark);
+    box-sizing: border-box;
     border-radius: 3vh;
+    padding: 0 1vh;
     margin: 4vh 0;
 }
 
 summary {
-    width: 48vw;
+    width: 64vw;
     height: 6vh;
+    box-sizing: border-box;
     background-color: var(--primary-lighten);
     border-radius: 3vh;
+    padding: 0 1vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 summary img {
-    padding: 0 1vw;
+    padding: 0;
+}
+
+details .row {
+    padding: 1vh;
 }
 
 .teamsection {
@@ -185,19 +201,21 @@ summary img {
 }
 
 .teamheader {
-    width: 48vw;
+    width: 64vw;
+    padding: 2vh 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .teamcontent {
-    width: 48vw;
+    width: 64vw;
 }
 
 .teamrow {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 1vh 0;
 }
 
 .skillrow p {
