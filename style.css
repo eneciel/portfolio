@@ -169,6 +169,10 @@ details .row {
     padding: 0;
 }
 
+.mobile-hidden {
+    padding: 0 1vh;
+}
+
 summary {
     width: 48vw;
     height: 6vh;

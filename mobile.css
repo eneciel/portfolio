@@ -200,6 +200,10 @@ details .row p {
     text-indent: 1em;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
 .teamsection {
     padding: 2vh 0;
     margin: 0 auto;
