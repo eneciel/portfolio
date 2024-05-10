@@ -79,7 +79,7 @@ img {
 
 #main {
     width: 60vw;
-    margin: 24vh auto;
+    margin: 4vh auto;
     scroll-snap-type: y mandatory;
 }
 
