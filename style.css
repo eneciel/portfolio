@@ -165,6 +165,10 @@ details {
     margin: 4vh 0;
 }
 
+details .row {
+    padding: 0;
+}
+
 summary {
     width: 48vw;
     height: 6vh;
