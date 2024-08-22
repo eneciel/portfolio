@@ -15,6 +15,7 @@ html, body {
     --white-03: #eee;
     --primary: #9747FF;
     scroll-behavior: smooth;
+    word-break: keep-all;
 }
 
 h1 {
@@ -63,7 +64,7 @@ a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 400;
-    padding: 0 1vh;
+    padding: 0 1em;
     margin: 0;
 }
 
@@ -117,7 +118,7 @@ main {
 
 .project {
     width: 60vw;
-    padding: 8vh 0;
+    padding: 2em 0;
     display: flex;
 }
 
@@ -133,7 +134,7 @@ main {
 
 .pj-preview {
     width: 48vw;
-    padding: 0 1vw;
+    padding: 0 1em;
     display: flex;
     justify-content: space-between;
 }
