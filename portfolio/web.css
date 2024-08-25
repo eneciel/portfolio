@@ -80,6 +80,14 @@ main {
     margin: 0 auto;
 }
 
+#icon {
+    width: 1em;
+    height: 1em;
+    box-shadow: none;
+    padding-right: 8px;
+    margin: 0;
+}
+
 .filterButton {
     min-width: 6vw;
     height: 4vh;
